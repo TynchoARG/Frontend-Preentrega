@@ -82,7 +82,20 @@
             <h2>Contacto</h2>
             <div>
                 <!--Formulario de contacto-->
-                <h3>Formulario de Contacto</h3>
+                <h3>Formulario de Contacto</h3> <br>
+                <form action="https://formspree.io/f/xnnbenra" method="POST">
+                    <label>Nombre:
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                    </label> <br>
+                    <label>Correo Electrónico: 
+                        <input type="email" name="email" placeholder="Ingrese su correo electronico" required>
+                    </label> <br>
+                    <label>Mensaje:
+                        <textarea name="mensaje" placeholder="Escriba su mensaje" required></textarea>
+                    </label> <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </form>
             </div>
             <div>
                 <!--Redes sociales / iconos-->
