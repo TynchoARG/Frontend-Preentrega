@@ -10,6 +10,7 @@
 
 .header {
     display: flex;
+    align-items: center;
     background: linear-gradient(135deg, #e4c9c9 0%, #ffffff 100%);
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -17,8 +18,7 @@
 
 .logo {
     display: flex;
-    align-items: center;
-    padding: 10px;  
+    align-items: center;  
 }
 
 /*Barra de navegación*/
@@ -27,8 +27,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 10px;
-    padding: 20px;
+    padding: 10px;
     font-family: Inter, Verdana, Tahoma, sans-serif;
     font-weight: bold;
     list-style: none;
