@@ -9,6 +9,7 @@
 /*Header*/
 
 .header {
+    display: flex;
     /*background: linear-gradient(135deg, #e4c9c9 0%, #ffffff 100%);*/
     background-color: whitesmoke;
     padding: 20px 0;
@@ -27,7 +28,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
-li a {
+.link-deco {
     text-decoration: none;
     list-style: none;
 }
