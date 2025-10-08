@@ -11,7 +11,8 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     background: #f7e6e6;
     padding: 10px 5px;
@@ -61,7 +62,7 @@ ul{
     background-color: rgb(125, 189, 181);
     font-family: Inter, Verdana, Tahoma, sans-serif;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    padding: 10%;
+    padding: 50px 15px;
 }
 
 .txt-encabezado {
@@ -77,15 +78,18 @@ ul{
 /*Sección productos*/
 
 .contenedor_productos ´{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 
 .tit_prod{
-
+    font-family: Inter, Verdana, Tahoma, sans-serif;
 }
 
 .items-prod {
-
+    font-family: Inter, Verdana, Tahoma, sans-serif;
 }
 
 
