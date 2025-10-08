@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/*Header*/
+
 .header {
     /*background: linear-gradient(135deg, #e4c9c9 0%, #ffffff 100%);*/
     background-color: whitesmoke;
@@ -17,6 +19,19 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
+/*Barra de navegación*/
+
+.contenedor_links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+li a {
+    text-decoration: none;
+    list-style: none;
+}
+
 .navegacion {
     margin: 10px;
     padding: 20px;
@@ -26,9 +41,33 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
+/*Encabezado*/
+
 .encabezado {
-    background-color: #229e8e;
+    background-color: rgb(125, 189, 181);
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+
 }
+
+/*Sección productos*/
+
+.contenedor_productos ´{
+
+}
+
+.tit_prod{
+
+}
+
+.items-prod {
+
+}
+
+/*Seccion contacto*/
+
+/*Footer*/
 
 .footer {
     background-color: #CCBCB9;
