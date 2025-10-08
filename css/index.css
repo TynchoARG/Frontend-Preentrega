@@ -17,30 +17,39 @@
 }
 
 .logo {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    
 }
 
 /*Barra de navegación*/
 
-.contenedor_links {
+.navegacion {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-}
-.link-deco {
-    text-decoration: none;
-    list-style: none;
-}
-
-.navegacion {
     margin: 10px;
     padding: 20px;
     font-family: Inter, Verdana, Tahoma, sans-serif;
     font-weight: bold;
     list-style: none;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
+
+.contenedor_links {
+    /*display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;*/
+}
+
+ul{
+    list-style-type: none;
+}
+
+.link-deco {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
 
 /*Encabezado*/
 
