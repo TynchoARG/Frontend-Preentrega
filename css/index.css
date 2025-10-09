@@ -81,15 +81,46 @@ ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
 
 }
 
-.tit_prod{
+.tit-seccion-prod{
     font-family: Inter, Verdana, Tahoma, sans-serif;
 }
 
-.items-prod {
+.card-prod {
     font-family: Inter, Verdana, Tahoma, sans-serif;
+    border-radius: 30px;
+    width: 30%;
+    height: auto;
+    box-shadow: #6c6867;
+}
+
+.tit-card-prod{
+    text-align: center;
+    font-weight: bold;
+}
+
+.img-prod {
+    border: 3px;
+    border-color: rgb(159, 226, 226);
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.precio-prod {
+    color: #5e5a58;
+    text-align: center;
+}
+
+.btn-prod {
+    background: #6c6867;
+    color: whitesmoke;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 80%;
 }
 
 
