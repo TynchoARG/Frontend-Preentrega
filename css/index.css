@@ -40,9 +40,6 @@
     height: 130px;
 }
 
-.contenedor_links {
-
-}
 
 ul{
     list-style-type: none;
@@ -77,22 +74,38 @@ ul{
 
 /*Sección productos*/
 
-.contenedor_productos ´{
-    display: flex;
-    justify-content: center;
+.contenedor_productos {
+    background-color: rgb(139, 146, 192);
+    overflow: auto;
+    justify-content: space-around;
     flex-wrap: wrap;
     font-family: Inter, Verdana, Tahoma, sans-serif;
-
+    padding: 10px;
 }
 
 .tit-seccion-prod{
+    padding: 10px;
+    margin: 15px 0 5px;
+    text-align: center;
+    color: rgb(50, 41, 221);
+    font-size: 1.2rem;
     font-family: Inter, Verdana, Tahoma, sans-serif;
 }
 
+.contenedor_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+}
+
 .card-prod {
+    padding: 15px;
     font-family: Inter, Verdana, Tahoma, sans-serif;
-    border-radius: 30px;
-    width: 30%;
+    border: 3px solid rgb(129, 129, 152);
+    border-radius: 10px;
+    width: auto;
     height: auto;
     box-shadow: #6c6867;
 }
@@ -100,32 +113,85 @@ ul{
 .tit-card-prod{
     text-align: center;
     font-weight: bold;
+    padding: 5px;
 }
 
 .img-prod {
-    border: 3px;
-    border-color: rgb(159, 226, 226);
-    border-radius: 30px;
+    width: 250px;
+    border: solid grey;
+    border-radius: 10px;
     justify-content: center;
 }
 
 .precio-prod {
+    padding: 5px;
     color: #5e5a58;
     text-align: center;
 }
 
 .btn-prod {
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
     background: #6c6867;
     color: whitesmoke;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     font-weight: bold;
-    width: 80%;
+    width: 100%;
+    
 }
 
 
 /*Seccion contacto*/
 
+.contenedor_contacto {
+    background-color: #d9b09b;
+}
+
+.tit_contacto {
+    padding: 15px 0 5px;
+    text-align: center;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+}
+
+.form_rrss_juntos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form_contacto {
+    background-color: #dc9c7b;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    padding: 15px;
+}
+
+.contenedor_rrss {
+    background-color: #a07863;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    padding: 15px;
+}
+
+.iconos_rrss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.iconos_rrss a {
+    padding: 2px 10px;
+}
+
+.ubicacion {
+    background-color: #aa5f39;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.ubicacion h3 {
+    padding: 5px;
+}
 
 /*Footer*/
 
@@ -133,4 +199,14 @@ ul{
     background-color: #CCBCB9;
     font-family: Inter, Verdana, Tahoma, sans-serif;
     font-size: small;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer h3 {
+    padding: 5px;
+}
+
+.footer h4 {
+    padding: 3px;
 }
