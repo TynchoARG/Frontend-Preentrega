@@ -47,7 +47,7 @@ ul{
 
 .link-deco {
     text-decoration: none;
-    color: darkgreen;
+    color: rgb(61, 61, 61);
     font-weight: bold;
     padding: 10px;
 }
@@ -56,14 +56,17 @@ ul{
 /*Encabezado*/
 
 .encabezado {
-    background-color: rgb(125, 189, 181);
+    /*background-color: rgb(125, 189, 181);*/
+    background: linear-gradient(135deg, #c8e6c9 0%, #f8bbd0 50%, #e1bee7 100%);
     font-family: Inter, Verdana, Tahoma, sans-serif;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     padding: 50px 15px;
 }
 
 .txt-encabezado {
+    color: rgb(61, 61, 61);
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .txt-descrip {
@@ -75,19 +78,20 @@ ul{
 /*Sección productos*/
 
 .contenedor_productos {
-    background-color: rgb(139, 146, 192);
+    color: rgb(61, 61, 61);
+    background-color: #fccede;
     overflow: auto;
     justify-content: space-around;
     flex-wrap: wrap;
     font-family: Inter, Verdana, Tahoma, sans-serif;
-    padding: 10px;
+    padding: 40px;
 }
 
 .tit-seccion-prod{
     padding: 10px;
     margin: 15px 0 5px;
     text-align: center;
-    color: rgb(50, 41, 221);
+    color: rgb(61, 61, 61);
     font-size: 1.2rem;
     font-family: Inter, Verdana, Tahoma, sans-serif;
 }
