@@ -14,7 +14,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: #f7e6e6;
+    background: linear-gradient(135deg, #F5FCE8 0%, #FFF5F8 100%);
     padding: 10px 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
@@ -26,7 +26,7 @@
 }
 
 
-/*Barra de navegación*/
+/*Barra de navegación
 
 .navegacion {
     display: flex;
@@ -51,6 +51,55 @@ ul{
     font-weight: bold;
     padding: 10px;
 }
+*/
+
+
+
+
+/*Barra de navegación*/
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    list-style: none;
+    flex-wrap: wrap;
+    height: 130px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.link-deco {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-bottom: 3px solid transparent;
+}
+
+/* Efecto hover simple */
+.link-deco:hover {
+    color: #E91E63;
+    border-bottom: 3px solid #F8BBD0;
+}
+
+/* Link activo (página actual) 
+.link-deco.active {
+    color: #E91E63;
+    border-bottom: 3px solid #F8BBD0;
+}
+*/
+
+
+
+
+
 
 
 /*Encabezado*/
@@ -79,8 +128,7 @@ ul{
 
 .contenedor_productos {
     color: rgb(61, 61, 61);
-    background-color: #fccede;
-    overflow: auto;
+     background: linear-gradient(135deg, #F5FCE8 0%, #FFF5F8 100%);
     justify-content: space-around;
     flex-wrap: wrap;
     font-family: Inter, Verdana, Tahoma, sans-serif;
