@@ -7,7 +7,7 @@
 }
 
 
-/*Header*/
+/* --- Header --- */
 
 .header {
     display: flex;
@@ -26,8 +26,8 @@
 }
 
 
-/*Barra de navegación
-
+/* --- Barra de navegación --- */
+/*
 .navegacion {
     display: flex;
     justify-content: space-around;
@@ -51,12 +51,12 @@ ul{
     font-weight: bold;
     padding: 10px;
 }
-*/
+*/*/
 
 
 
 
-/*Barra de navegación*/
+/* --- Barra de navegación --- */
 .navegacion {
     display: flex;
     justify-content: space-around;
@@ -83,26 +83,14 @@ ul {
     border-bottom: 3px solid transparent;
 }
 
-/* Efecto hover simple */
+/* --- Efecto hover simple --- */
 .link-deco:hover {
     color: #E91E63;
     border-bottom: 3px solid #F8BBD0;
 }
 
-/* Link activo (página actual) 
-.link-deco.active {
-    color: #E91E63;
-    border-bottom: 3px solid #F8BBD0;
-}
-*/
 
-
-
-
-
-
-
-/*Encabezado*/
+/* --- Encabezado --- */
 
 .encabezado {
     /*background-color: rgb(125, 189, 181);*/
@@ -124,7 +112,7 @@ ul {
 }
 
 
-/*Sección productos*/
+/* --- Sección productos --- */
 
 .contenedor_productos {
     color: rgb(61, 61, 61);
@@ -248,7 +236,7 @@ ul {
     box-shadow: 0 6px 16px rgba(233, 30, 99, 0.4);
 }
 
-/*Seccion contacto*/
+/* --- Seccion contacto --- */
 
 .contenedor_contacto {
     background-color: #d9b09b;
@@ -298,7 +286,7 @@ ul {
     padding: 5px;
 }
 
-/*Footer*/
+/* --- Footer --- */
 
 .contenedor-footer {
   background: #333;
@@ -306,12 +294,14 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Inter, Verdana, Tahoma, sans-serif;
   padding: 20px;
 }
 
 /* --- Parte superior (links, mapa, rrss) --- */
 .secciones-footer {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
@@ -320,10 +310,11 @@ ul {
 .secciones-footer > div {
   flex: 1 1 200px;
   text-align: center;
+  justify-content: space-around;
   padding: 15px;
   margin: 5px;
-  border-radius: 8px;
-}
+ }
+
 
 /* --- Parte inferior (título y texto) --- */
 .contenedor-titulo-footer {
@@ -346,4 +337,11 @@ ul {
 .copyright-footer h5 {
   font-size: 0.8rem;
   color: #ccc;
+}
+
+@media (max-width: 600px) {
+  .secciones-footer {
+    flex-direction: column; /* ahora se apilan */
+    align-items: center;
+  }
 }
