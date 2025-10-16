@@ -66,7 +66,7 @@ ul {
     background: linear-gradient(135deg, #c8e6c9 0%, #f8bbd0 50%, #e1bee7 100%);
     font-family: Inter, Verdana, Tahoma, sans-serif;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    padding: 50px 15px;
+    padding: 80px 15px;
 }
 
 .txt-encabezado {
@@ -89,7 +89,7 @@ ul {
     justify-content: space-around;
     flex-wrap: wrap;
     font-family: Inter, Verdana, Tahoma, sans-serif;
-    padding: 40px;
+    padding: 10px;
 }
 
 .tit-seccion-prod{
@@ -193,47 +193,60 @@ ul {
 }
 
 .formulario {
-    background-color: #e1bee7;
+    background-color: #e0c8e4;
+    padding: 20px;
     font-family: Inter, Verdana, Tahoma, sans-serif;
-    border: 2 px solid rgb(194, 157, 163);
-    border-radius: 20%;
+    border: 2 px solid rgb(0, 0, 0);
+    border-radius: 8px;
     width: 300px;
+    height: auto;
     margin: auto;
+    gap: 5px;
 }
 
 
 /* --- Footer --- */
 
 .contenedor-footer {
-  background: #333;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Inter, Verdana, Tahoma, sans-serif;
-  padding: 30px 20px;
+    background: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    padding: 10px 5px;
 }
 
 /* --- Parte superior (links, mapa, rrss) --- */
 .secciones-footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 1200px;
-  margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    overflow: visible;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 25px;
 }
 
 .links-footer {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    flex: 0 0 100px; /* ancho mínimo fijo para evitar compresión */
+    justify-content: center;
+    align-items: center;
 }
 
 .links-footer ul {
     list-style: none;
+    display: flex; /* override global ul display:flex */
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start; /* alinear a la izquierda dentro de su caja */
 }
 
 .links-footer li {
@@ -251,21 +264,27 @@ ul {
 }
 
 /* --- mapa central ---*/
+.mapa-footer {
+    flex: 1 1 150px; /* permite crecer y reducir sin superponer */
+}
+
 .mapa-footer iframe {
-    width: 60%;
-    height: 200px;
-    border: none;
-  }
+        width: 100%;
+        height: 220px;
+        border: none;
+}
 
 /* --- redes ---*/
 .rrss-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 12px;
 }
 
+.rrss-footer img {
+    width: 40px;
+}
 .rrss-footer img:hover {
     transform: scale(1.1);
 }
@@ -298,24 +317,50 @@ ul {
     align-items: center;
   }
 
-  .links-footer {
-    width: 100%;
-    height: auto;
-  }
+    /* Tighter spacing on mobile */
+    .secciones-footer {
+        gap: 12px;
+        margin-bottom: 16px;
+    }
 
-  .mapa-footer iframe {
-    width: 100%;
-    height: 180px;
-  }
+    .links-footer {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding: 8px 0;
+    }
 
-  .rrss-footer {
-    width: 100%;
-    height: auto;
-  }
+    .links-footer ul {
+        list-style: none;
+        display: flex; /* override global ul display:flex */
+        flex-direction: column; /* keep vertical on mobile */
+        gap: 6px;
+        padding: 0;
+        margin: 0;
+        align-items: flex-start;
+    }
 
-  .rrss-footer img {
-    width: 40px;
-  }
+    .links-footer li {
+        margin: 4px 0;
+    }
+
+    .mapa-footer iframe {
+        width: 100%;
+        height: 160px;
+    }
+
+    .rrss-footer {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 0; /* reduce espacio superior/ inferior */
+    }
+
+    .rrss-footer img {
+        width: 36px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -324,7 +369,7 @@ ul {
     }
 
     .links-footer li {
-        margin: 3px 0;
+        margin: 2px 6px;
         font-size: 0.9rem;
     }
     
@@ -334,10 +379,10 @@ ul {
     }
 
     .rrss-footer img {
-        width: 35px;
+        width: 32px;
     }
 
     .mapa-footer iframe {
-        height: 160px;
+        height: 140px;
     }
 }
