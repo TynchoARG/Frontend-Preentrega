@@ -26,7 +26,7 @@
 }
 
 
-/* --- Barra de navegación --- */
+/* --- Header - Barra de navegación --- */
 .navegacion {
     display: flex;
     justify-content: space-around;
@@ -53,7 +53,7 @@ ul {
     border-bottom: 3px solid transparent;
 }
 
-/* --- Efecto hover simple --- */
+/* --- Efecto hover barra navegación header --- */
 .link-deco:hover {
     color: #E91E63;
     border-bottom: 3px solid #F8BBD0;
@@ -63,7 +63,6 @@ ul {
 /* --- Encabezado --- */
 
 .encabezado {
-    /*background-color: rgb(125, 189, 181);*/
     background: linear-gradient(135deg, #c8e6c9 0%, #f8bbd0 50%, #e1bee7 100%);
     font-family: Inter, Verdana, Tahoma, sans-serif;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -84,9 +83,9 @@ ul {
 
 /* --- Sección productos --- */
 
-.contenedor_productos {
+.contenedor-productos {
     color: rgb(61, 61, 61);
-     background: linear-gradient(135deg, #F5FCE8 0%, #FFF5F8 100%);
+    background: linear-gradient(135deg, #F5FCE8 0%, #FFF5F8 100%);
     justify-content: space-around;
     flex-wrap: wrap;
     font-family: Inter, Verdana, Tahoma, sans-serif;
@@ -102,7 +101,7 @@ ul {
     font-family: Inter, Verdana, Tahoma, sans-serif;
 }
 
-.contenedor_card {
+.contenedor-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -114,14 +113,14 @@ ul {
 .card-prod {
     background: white;
     border-radius: 15px;
-    border: 3px solid #F8BBD0; /* Rosa pastel */
+    border: 3px solid #F8BBD0;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 .card-prod:hover {
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    border-color: #e2658f; /* Rosa más intenso */
+    border-color: #e2658f;
 }
 
 .tit-card-prod {
@@ -172,53 +171,36 @@ ul {
 
 /* --- Seccion contacto --- */
 
-.contenedor_contacto {
-    background-color: #d9b09b;
+.contenedor-contacto {
+    background-color: linear-gradient(135deg, #F5FCE8 0%, #FFF5F8 100%);
 }
 
-.tit_contacto {
+.tit-contacto {
     padding: 15px 0 5px;
     text-align: center;
     font-family: Inter, Verdana, Tahoma, sans-serif;
 }
 
-.form_rrss_juntos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.form_contacto {
-    background-color: #dc9c7b;
-    font-family: Inter, Verdana, Tahoma, sans-serif;
+.contenedor-form-contacto {
+    text-align: center;
     padding: 15px;
 }
 
-.contenedor_rrss {
-    background-color: #a07863;
-    font-family: Inter, Verdana, Tahoma, sans-serif;
-    padding: 15px;
-}
-
-.iconos_rrss {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.iconos_rrss a {
-    padding: 2px 10px;
-}
-
-.ubicacion {
-    background-color: #aa5f39;
+.tit-form-contacto {
     font-family: Inter, Verdana, Tahoma, sans-serif;
     text-align: center;
-}
-
-.ubicacion h3 {
     padding: 5px;
 }
+
+.formulario {
+    background-color: #e1bee7;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    border: 2 px solid rgb(194, 157, 163);
+    border-radius: 20%;
+    width: 300px;
+    margin: auto;
+}
+
 
 /* --- Footer --- */
 
@@ -239,19 +221,17 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 30%;
   width: 100%;
   max-width: 1200px;
   margin-bottom: 25px;
 }
 
-.secciones-footer > div {
-  flex: 1 1 250px;
-  text-align: center;
-  padding: 10px;
+.links-footer {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
 }
 
-/* --- links --- */
 .links-footer ul {
     list-style: none;
 }
@@ -263,7 +243,7 @@ ul {
 .footer-link {
     text-decoration: none;
     color: #FFF;
-    font-weight: 500;
+    font-weight: lighter;
 }
 
 .footer-link:hover {
@@ -272,7 +252,7 @@ ul {
 
 /* --- mapa central ---*/
 .mapa-footer iframe {
-    width: 300px;
+    width: 60%;
     height: 200px;
     border: none;
   }
@@ -280,13 +260,10 @@ ul {
 /* --- redes ---*/
 .rrss-footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 12px;
-}
-
-.rrss-footer img {
-    border-radius: 50%;
 }
 
 .rrss-footer img:hover {
@@ -317,19 +294,23 @@ ul {
 
 @media (max-width: 800px) {
   .secciones-footer {
-    flex-direction: column; /* ahora se apilan */
+    flex-direction: column; /* se apilan todas las secciones */
     align-items: center;
-    gap: 20px;
   }
 
-  .secciones-footer > div {
-    padding: 10px 5px;
-    max-width: 400px;
+  .links-footer {
+    width: 100%;
+    height: auto;
   }
 
   .mapa-footer iframe {
     width: 100%;
     height: 180px;
+  }
+
+  .rrss-footer {
+    width: 100%;
+    height: auto;
   }
 
   .rrss-footer img {
@@ -338,14 +319,20 @@ ul {
 }
 
 @media (max-width: 500px) {
-    .secciones-footer > div {
-        padding: 5px 0;
+    .links-footer {
+        flex-direction: row;
     }
+
     .links-footer li {
         margin: 3px 0;
         font-size: 0.9rem;
     }
     
+    .rrss-footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     .rrss-footer img {
         width: 35px;
     }

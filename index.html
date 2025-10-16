@@ -17,7 +17,7 @@
     
     <!--Barra de Navegación-->
 
-        <div class="contenedor_links">
+        <div class="contenedor-links">
             <nav>
                 <ul class="navegacion">
                     <li>
@@ -47,11 +47,11 @@
 
     <!--Sección Productos-->
 
-        <section class="contenedor_productos">
+        <section class="contenedor-productos">
             <div class="tit-seccion-prod">
                 <h2 id="productos">Productos</h2>
             </div>
-            <div class="contenedor_card">
+            <div class="contenedor-card">
                 <article class="card-prod">
                     <h3 class="tit-card-prod">Ciempiés Antiestrés</h3>
                     <img src="media/images/fideos_01.jpg" alt="Fideos de colores" width="300px" class="img-prod">
@@ -112,23 +112,22 @@
 
      <!--Sección contacto-->
     
-        <section class="contenedor_contacto">
-            <div class="tit_contacto">
+        <section class="contenedor-contacto">
+            <div class="tit-contacto">
                 <h2 id="contacto">Contacto</h2>
             </div>
-            <div class="form_rrss_juntos">
-                <div class="form_contacto">
+
+        <!-- Formulario de contacto -->
+            <div class="contenedor-form-contacto">
+                <div class="tit-form-contacto">
                     <h3>Formulario de Contacto</h3> <br>
-                    <form action="https://formspree.io/f/xnnbenra" method="POST">
-                        <label>Nombre:
-                            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
-                        </label> <br>
-                        <label>Correo Electrónico: 
-                            <input type="email" name="email" placeholder="Ingrese su correo electronico" required>
-                        </label> <br>
-                        <label>Mensaje:
-                            <textarea name="mensaje" placeholder="Escriba su mensaje" required></textarea>
-                        </label> <br>
+                    <form class="formulario" action="https://formspree.io/f/xnnbenra" method="POST">
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                        <br>
+                        <input type="email" name="email" placeholder="Ingrese su correo electronico" required>
+                        <br>
+                        <textarea name="mensaje" placeholder="Escriba su mensaje" rows="6" required></textarea>
+                        <br>
                         <button type="submit">Enviar</button>
                         <button type="reset">Borrar</button>
                     </form>
