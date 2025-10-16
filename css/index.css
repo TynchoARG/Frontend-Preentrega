@@ -234,7 +234,7 @@ ul {
 .links-footer {
     display: flex;
     flex-direction: column;
-    flex: 0 0 100px; /* ancho mínimo fijo para evitar compresión */
+    flex: 0 0 200px; /* ancho mínimo fijo para evitar compresión */
     justify-content: center;
     align-items: center;
 }
