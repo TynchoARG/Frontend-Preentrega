@@ -27,36 +27,6 @@
 
 
 /* --- Barra de navegación --- */
-/*
-.navegacion {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 5px;
-    font-family: Inter, Verdana, Tahoma, sans-serif;
-    font-weight: bold;
-    list-style: none;
-    flex-wrap: wrap;
-    height: 130px;
-}
-
-
-ul{
-    list-style-type: none;
-}
-
-.link-deco {
-    text-decoration: none;
-    color: rgb(61, 61, 61);
-    font-weight: bold;
-    padding: 10px;
-}
-*/*/
-
-
-
-
-/* --- Barra de navegación --- */
 .navegacion {
     display: flex;
     justify-content: space-around;
@@ -140,15 +110,6 @@ ul {
     width: 100%;
 }
 
-/*.card-prod {
-    padding: 15px;
-    font-family: Inter, Verdana, Tahoma, sans-serif;
-    border: 3px solid rgb(129, 129, 152);
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-    box-shadow: #6c6867;
-}*/
 
 .card-prod {
     background: white;
@@ -163,12 +124,6 @@ ul {
     border-color: #e2658f; /* Rosa más intenso */
 }
 
-/*.tit-card-prod{
-    text-align: center;
-    font-weight: bold;
-    padding: 5px;
-}*/
-
 .tit-card-prod {
     color: #333333;
     font-family: Inter, Verdana, sans-serif;
@@ -177,11 +132,6 @@ ul {
     font-weight: 600;
 }
 
-/*.img-prod {
-    width: 250px;
-    border-radius: 10px;
-    justify-content: center;
-}*/
 
 .img-prod {
     width: 100%;
@@ -191,11 +141,6 @@ ul {
     margin-bottom: 15px;
 }
 
-/*.precio-prod {
-    padding: 5px;
-    color: #5e5a58;
-    text-align: center;
-}*/
 
 .precio-prod {
     color: #E91E63;
@@ -205,18 +150,6 @@ ul {
     margin-bottom: 15px;
 }
 
-/*.btn-prod {
-    padding: 10px;
-    margin: 5px;
-    justify-content: center;
-    background: #6c6867;
-    color: whitesmoke;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    width: 100%;
-    
-}*/
 
 .btn-prod {
     background: linear-gradient(135deg, #E91E63 0%, #F06292 100%);
@@ -235,6 +168,7 @@ ul {
     background: linear-gradient(135deg, #C2185B 0%, #E91E63 100%);
     box-shadow: 0 6px 16px rgba(233, 30, 99, 0.4);
 }
+
 
 /* --- Seccion contacto --- */
 
@@ -295,7 +229,7 @@ ul {
   flex-direction: column;
   align-items: center;
   font-family: Inter, Verdana, Tahoma, sans-serif;
-  padding: 20px;
+  padding: 30px 20px;
 }
 
 /* --- Parte superior (links, mapa, rrss) --- */
@@ -304,34 +238,74 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+  gap: 30%;
   width: 100%;
+  max-width: 1200px;
+  margin-bottom: 25px;
 }
 
 .secciones-footer > div {
-  flex: 1 1 200px;
+  flex: 1 1 250px;
   text-align: center;
-  justify-content: space-around;
-  padding: 15px;
-  margin: 5px;
- }
+  padding: 10px;
+}
 
+/* --- links --- */
+.links-footer ul {
+    list-style: none;
+}
 
-/* --- Parte inferior (título y texto) --- */
+.links-footer li {
+    margin: 6px 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    color: #F8BBD0;
+}
+
+/* --- mapa central ---*/
+.mapa-footer iframe {
+    width: 300px;
+    height: 200px;
+    border: none;
+  }
+
+/* --- redes ---*/
+.rrss-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.rrss-footer img {
+    border-radius: 50%;
+}
+
+.rrss-footer img:hover {
+    transform: scale(1.1);
+}
+
+/* --- Parte inferior (título, subtitulo, copyright) --- */
 .contenedor-titulo-footer {
-  text-align: center;
-  margin-top: 20px;
-  max-width: 600px;
-  padding: 15px;
-  border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
 }
 
 .titulo-footer h3 {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .subtitulo-footer {
-  font-size: 0.9rem;
-  margin-bottom: 10px;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
 }
 
 .copyright-footer h5 {
@@ -339,9 +313,44 @@ ul {
   color: #ccc;
 }
 
-@media (max-width: 600px) {
+/* --- Parte responsive --- */ 
+
+@media (max-width: 800px) {
   .secciones-footer {
     flex-direction: column; /* ahora se apilan */
     align-items: center;
+    gap: 20px;
   }
+
+  .secciones-footer > div {
+    padding: 10px 5px;
+    max-width: 400px;
+  }
+
+  .mapa-footer iframe {
+    width: 100%;
+    height: 180px;
+  }
+
+  .rrss-footer img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+    .secciones-footer > div {
+        padding: 5px 0;
+    }
+    .links-footer li {
+        margin: 3px 0;
+        font-size: 0.9rem;
+    }
+    
+    .rrss-footer img {
+        width: 35px;
+    }
+
+    .mapa-footer iframe {
+        height: 160px;
+    }
 }
