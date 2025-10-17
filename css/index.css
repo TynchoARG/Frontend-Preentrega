@@ -172,17 +172,20 @@ ul {
 /* --- Seccion contacto --- */
 
 .contenedor-contacto {
-    background-color: linear-gradient(135deg, #F5FCE8 0%, #FFF5F8 100%);
+        background: linear-gradient(135deg, #F5FCE8 0%, #FFF5F8 100%);
 }
 
 .tit-contacto {
-    padding: 15px 0 5px;
+    padding: 10px 0 5px 0;
     text-align: center;
+    color: rgb(61, 61, 61);
+    font-size: 1.2rem;
     font-family: Inter, Verdana, Tahoma, sans-serif;
 }
 
 .contenedor-form-contacto {
     text-align: center;
+    color: rgb(61, 61, 61);
     padding: 15px;
 }
 
@@ -194,16 +197,81 @@ ul {
 
 .formulario {
     background-color: #e0c8e4;
+    font-size: 16px;
     padding: 20px;
     font-family: Inter, Verdana, Tahoma, sans-serif;
-    border: 2 px solid rgb(0, 0, 0);
+    border: 2px solid rgba(0,0,0,0.2);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     border-radius: 8px;
-    width: 300px;
+    width: 400px;
     height: auto;
     margin: auto;
     gap: 5px;
 }
 
+input[type="text"], input[type="email"], textarea {
+    color: #0e070a;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    width: 90%;
+}
+
+input[type="text"], input[type="email"] {
+    margin: 10px;
+    background-color: transparent;
+    border-bottom: 2px solid #c3809d;
+}
+
+textarea {
+    background-color: #fbeef4
+}
+
+/* --- Estilo del Placeholder --- */
+input::placeholder,
+textarea::placeholder,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #a88ba3; /* tono más suave */
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    padding: 5px;
+}
+
+button[type="submit"] {
+    background-color: #ba798e;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    color: whitesmoke;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button[type="reset"] {
+    background-color: whitesmoke;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+    color: #ba798e;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: #905f6e;
+}
+
+button[type="reset"]:hover {
+    background-color: rgb(217, 211, 211);
+    color: #83666e;
+}
 
 /* --- Footer --- */
 
@@ -309,9 +377,14 @@ ul {
   color: #ccc;
 }
 
-/* --- Parte responsive --- */ 
+/* ------ Parte responsive ------ */ 
 
 @media (max-width: 800px) {
+
+.formulario {
+    max-width: 400px;
+}
+
   .secciones-footer {
     flex-direction: column; /* se apilan todas las secciones */
     align-items: center;
@@ -363,7 +436,12 @@ ul {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
+
+    .formulario {
+        max-width: 90%;
+    }
+
     .links-footer {
         flex-direction: row;
     }
