@@ -7,7 +7,7 @@
 }
 
 
-/* --- Header --- */
+/* ------ Header ------ */
 
 .header {
     display: flex;
@@ -26,7 +26,7 @@
 }
 
 
-/* --- Header - Barra de navegación --- */
+/* ------ Header - Barra de navegación ------ */
 .navegacion {
     display: flex;
     justify-content: space-around;
@@ -53,14 +53,14 @@ ul {
     border-bottom: 3px solid transparent;
 }
 
-/* --- Efecto hover barra navegación header --- */
+/* ------ Efecto hover barra navegación header ------ */
 .link-deco:hover {
     color: #E91E63;
     border-bottom: 3px solid #F8BBD0;
 }
 
 
-/* --- Encabezado --- */
+/* ------ Encabezado ------ */
 
 .encabezado {
     background: linear-gradient(135deg, #c8e6c9 0%, #f8bbd0 50%, #e1bee7 100%);
@@ -81,7 +81,7 @@ ul {
 }
 
 
-/* --- Sección productos --- */
+/* ------ Sección productos ------ */
 
 .contenedor-productos {
     color: rgb(61, 61, 61);
@@ -169,7 +169,7 @@ ul {
 }
 
 
-/* --- Seccion contacto --- */
+/* ------ Seccion contacto ------ */
 
 .contenedor-contacto {
         background: linear-gradient(135deg, #F5FCE8 0%, #FFF5F8 100%);
@@ -228,12 +228,12 @@ textarea {
     background-color: #fbeef4
 }
 
-/* --- Estilo del Placeholder --- */
+/* ------ Estilo del Placeholder ------ */
 input::placeholder,
 textarea::placeholder,
 input[type="text"]::placeholder,
 input[type="email"]::placeholder {
-    color: #a88ba3; /* tono más suave */
+    color: #a88ba3;
     font-family: Inter, Verdana, Tahoma, sans-serif;
     font-style: italic;
     font-size: 14px;
@@ -273,7 +273,7 @@ button[type="reset"]:hover {
     color: #83666e;
 }
 
-/* --- Footer --- */
+/* ------ Footer ------ */
 
 .contenedor-footer {
     background: #333;
@@ -309,7 +309,7 @@ button[type="reset"]:hover {
 
 .links-footer ul {
     list-style: none;
-    display: flex; /* override global ul display:flex */
+    display: flex;
     flex-direction: column;
     gap: 8px;
     padding: 0;
@@ -331,7 +331,7 @@ button[type="reset"]:hover {
     color: #F8BBD0;
 }
 
-/* --- mapa central ---*/
+/* ------ mapa central ------*/
 .mapa-footer {
     flex: 1 1 150px; /* permite crecer y reducir sin superponer */
 }
@@ -342,7 +342,7 @@ button[type="reset"]:hover {
         border: none;
 }
 
-/* --- redes ---*/
+/* ------ redes ------*/
 .rrss-footer {
     display: flex;
     flex-direction: column;
@@ -390,7 +390,7 @@ button[type="reset"]:hover {
     align-items: center;
   }
 
-    /* Tighter spacing on mobile */
+    /* --- ajusta los espacios en modo mobile --- */
     .secciones-footer {
         gap: 12px;
         margin-bottom: 16px;
@@ -405,8 +405,8 @@ button[type="reset"]:hover {
 
     .links-footer ul {
         list-style: none;
-        display: flex; /* override global ul display:flex */
-        flex-direction: column; /* keep vertical on mobile */
+        display: flex;
+        flex-direction: column; /* se mantiene vertical en modo mobile */
         gap: 6px;
         padding: 0;
         margin: 0;
@@ -428,7 +428,7 @@ button[type="reset"]:hover {
         justify-content: center;
         align-items: center;
         gap: 12px;
-        padding: 8px 0; /* reduce espacio superior/ inferior */
+        padding: 8px 0;
     }
 
     .rrss-footer img {
